@@ -18,7 +18,8 @@ function deepestChild(){
   var lis = document.querySelector("#grand-node")
   var next = lis.children[0]
   while(next){
+    lis = next
     next = next.children[0]
   }
-  return next
+  return lis
 }
